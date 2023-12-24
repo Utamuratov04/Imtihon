@@ -1,0 +1,55 @@
+.section{
+    width: 100%;
+    height: 716px;
+    &-image{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        border-radius: 26px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        }
+      
+        &-text{
+            position: absolute;
+            padding-left: 80px;
+            bottom:150px;
+            color: #FFF;
+            font-family: SF Pro Text;
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 125%;
+            @mixin media(414){
+              display:none;
+            }
+          
+        }
+        &-title{
+            display: flex;
+            align-items: center;
+            position: absolute;
+            padding-left: 80px;
+            bottom: 55px;
+            gap: 25px;
+            &-text{
+                
+                color: #FFF;
+                font-family: SF Pro Text;
+                font-size: 25px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal; 
+            }
+            &-icon{
+                width: 64px;
+                height: 64px;
+                border: 1px solid #FFF;
+                border-radius: 50%;
+                @include flex(center,space-between);
+            }
+        }
+        
+    }
+    
+    
