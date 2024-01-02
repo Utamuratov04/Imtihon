@@ -1,13 +1,20 @@
 .section{
     width: 100%;
     height: 716px;
+    margin-bottom: 100px;
+    @include media(414){
+        margin-bottom:32px;
+        height:auto;
+    }
     &-image{
         width: 100%;
         height: 100%;
         position: relative;
         border-radius: 26px;
-        background-repeat: no-repeat;
         background-size: 100%;
+        @include media(414){
+            width: 100%;
+            height: auto;
         }
       
         &-text{
@@ -20,7 +27,7 @@
             font-style: normal;
             font-weight: 600;
             line-height: 125%;
-            @mixin media(414){
+            @include media(414){
               display:none;
             }
           
@@ -32,6 +39,7 @@
             padding-left: 80px;
             bottom: 55px;
             gap: 25px;
+            
             &-text{
                 
                 color: #FFF;
@@ -40,6 +48,9 @@
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal; 
+                @include media(414){
+                    font-size: 20px;
+                }
             }
             &-icon{
                 width: 64px;
@@ -47,9 +58,12 @@
                 border: 1px solid #FFF;
                 border-radius: 50%;
                 @include flex(center,space-between);
+                @include media(414){
+                    display: none;
+                }
             }
         }
         
     }
-    
+    }
     
